@@ -239,7 +239,11 @@ h3
 /*Responsivité*/
 @media screen and (max-width: 1024px)
 {
-	
+	body 
+	{
+		margin: 0px;
+		
+	}
 	header
 	{
 		display: flex;

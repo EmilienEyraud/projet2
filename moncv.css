@@ -1,0 +1,335 @@
+ /*éléments principaux de la page*/
+
+@font-face {
+    font-family: 'ambleregular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+	font-family: "ambleregular", "Impact", "Arial"; 
+	color: black;
+	text-align: justify;
+	font-weight: normal;
+	font-style: normal;
+}
+#bloc_page
+{
+	width: auto;
+	margin: auto;
+}
+h2
+{
+	font-weight: bold;
+}
+h4
+{
+	font-weight: bold;
+}
+
+/*header*/
+header
+{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+#photo
+{
+	padding-top: 25px;
+	width: 25%;
+	background-color: #FEA101;
+	
+}
+.moi
+{
+	text-align: center;
+}
+#identite
+{
+	display: flex;
+	flex-direction: row;
+	width: 75%;
+}
+.prenom
+{
+	text-align: right;
+	padding-top: 75px;
+	margin-left: 25px;
+	color : #FEA101;
+}
+.nom
+{
+	text-align: left;
+	padding-top: 75px;
+	margin-left: 10px;
+}
+.poste
+{
+	margin-left: 25px;
+	position: absolute;
+	padding-top: 150px;
+}
+
+.border
+{
+	width: 50px;
+	margin-left: 25px;
+	padding-top: 175px;
+	border-bottom: 2px solid #FEA101;
+	position: absolute;
+	
+}		   
+		  
+
+/*section*/
+.parcours
+{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+.detailparcours
+{
+	display: flex;
+	flex-direction: column;
+	width: 75%;	
+}
+
+/*article*/
+
+article
+{
+	padding-left: 30px;
+	text-align: justify;
+}
+
+.blocparagraphe
+{
+	margin-top: 30px;
+}
+.titreparagraphe
+{
+	display: flex;
+	border-bottom: solid #FEA101;
+}
+.fa
+{
+	color: #FEA101;
+	width: 50px;
+	margin-right: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fas.fa-circle.cercle
+{ 
+	border: 2px solid #FEA101;
+	border-radius: 50%;
+	padding: 3px;  
+	display: inline;
+}
+.annee
+{
+	padding-left: 25px;
+	margin-right: 25px;
+}
+.lieu
+{
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+}
+
+.point
+{
+	width: 10%;
+	text-align: center;
+	display:inline-block;
+	padding-top: 15px;
+}
+
+.date
+{
+	Width:25%;
+	margin-left: 25px;
+	display: flex;
+	flex-direction: row;
+	padding:5px;
+}
+.Libelle
+{
+	padding-right: 125px;
+	width: 75%;
+}
+.recos
+{
+	display: flex;
+	margin-top: 25px;
+}
+.societes
+{
+	text-align : left;
+	padding-left :50px;
+	margin-left : 25px;
+}
+
+/*aside*/
+aside
+{	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #FEA101;
+	width: 25%;
+}
+
+.titreaside
+h3
+{
+	background-color: black;
+	color: #FEA101;
+	text-align: center;
+}
+.adresse
+{
+	text-align: left;
+	padding-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.texteapropos
+{
+	text-align: justify;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top :15px;
+	padding-bottom: 100px;
+}
+
+.iconesloisirs
+{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 25px;
+
+}
+.mesloisirs
+ {
+	width: 40px;
+	height: 40px;
+	border: 2px solid black;
+	border-radius: 50%;
+	padding: 10px;  
+	text-align: center;
+	display:inline-block;	
+	line-height: 40px;
+}
+
+/*Responsivité*/
+@media screen and (max-width: 1024px)
+{
+	
+	header
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	#photo 
+	{
+		width: 100%;
+	}
+	#identite
+	{
+		width: 100%;
+		
+	}
+	#prenom
+	{
+		padding-top: 15px;
+		
+	}
+	#nom
+	{
+		padding-top: 15px;
+	}
+	#poste	
+	{
+		padding-top: 75px;
+	}
+	#border
+	{
+		padding-top: 100px;
+	}
+	.parcours
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 25px;
+	}
+	.detailparcours
+	{
+		width: 100%;
+	}
+	.lieu
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.date
+	{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	.point
+	{
+		width: 15%;
+	}
+	.annee
+	{
+		width: 85%;
+		
+	}
+	.Libelle
+	{
+		padding-right: 5px;
+		width: 100%;
+				
+	}
+	.cerclecontainer
+	{
+		height: 100px;
+		width: 40px;
+	}
+	aside
+	{
+		width: 100%;
+		margin-top: 15px;
+		padding-bottom: 15px;
+		
+	}
+	
+	.recos 
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		
+	}	
+	.societes
+	{
+		padding-top: 25px;
+		padding-left: 0px;
+	}
+}
